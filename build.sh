@@ -28,7 +28,7 @@ fi
 # self-hosted runner's Docker container. Points the check at a reachable
 # URL instead of disabling it outright, so a genuine network problem in
 # CI still fails loudly rather than being silently ignored.
-CONNLINE="CONNECTIVITY_CHECK_URIS = \"https://www.example.com/\""
+CONNLINE="CONNECTIVITY_CHECK_URIS = \"https://www.google.com/\""
 
 cat conf/local.conf | grep "${CONNLINE}" > /dev/null
 conn_info=$?
